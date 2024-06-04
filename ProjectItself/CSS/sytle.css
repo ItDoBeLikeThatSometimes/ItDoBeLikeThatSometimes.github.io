@@ -1,0 +1,227 @@
+/* Global styles */
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  width: 1920px;
+  height: 100px;
+}
+
+/* Heading styles */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Container styles */
+#svg-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* SVG styles */
+#svg-KelpContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+
+/* List item styles */
+ul li {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li {
+  background-color: #ddd;
+  margin-bottom: 5px;
+}
+
+/* Styles for the slider container */
+.slider-container {
+  position: relative;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  z-index: 10;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#maxDistanceValue {
+  margin-top: 12px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Styles for the start animation container */
+.startanimation-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  position: relative;
+  top: -75px;
+  z-index: 10;
+  height: 150px; /* Ensure enough height to fit the list items */
+}
+
+/* Styling for the buttons in the start animation container */
+.startanimation-container button {
+  margin-right: 10px;
+}
+
+/* Styling for the year text */
+.YearText {
+  fill: green;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-anchor: end;
+}
+
+/* Styling for the Speed button */
+#speedButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  width: 100px; /* Set a width for the button */
+  position: relative; /* Make it relative to place the list below */
+}
+
+#speedButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styles for the speed options list */
+#speedOptions {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  display: none; /* Hide the list by default */
+  position: absolute; /* Position it absolutely */
+  top: 45px; /* Position it below the Speed button */
+  left: 0; /* Align it to the left of the button */
+  width: 100%; /* Make it the same width as the button */
+}
+
+#speedOptions li {
+  padding: 10px;
+  margin: 5px 0; /* Adjust margin for spacing */
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the color of the selected speed option */
+#speedOptions li.selected {
+  background-color: green;
+  color: white;
+}
+
+.circle-label {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  fill: black;
+  stroke: white;
+  stroke-width: 0.5px;
+}
+
+/* Styling for SVG */
+#svg-AdvancedKelpContainer {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  width: 1000px;
+  height: 900px;
+  z-index: 1; /* Ensure SVG is behind the list */
+}

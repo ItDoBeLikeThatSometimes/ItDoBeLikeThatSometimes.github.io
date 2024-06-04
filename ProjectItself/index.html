@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blobby Visualization</title>
+  <!-- Include D3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@latest"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="CSS/sytle.css">
+</head>
+<body style="position: relative;">
+  <h1>Organic/Blobby Visualisation</h1>
+
+  <div id="svg-container"></div>
+
+  <svg id="svg-KelpContainer"></svg>
+
+  <svg id="svg-AxisContainer"></svg>
+ 
+  <div class="slider-container">
+    <input type="range" id="maxDistanceSlider" min="0" max="500" value="0" step="1">
+    <p id="maxDistanceValue">Slider Value (distance): 0</p>
+  </div>
+  <div class="startanimation-container">
+    <button id="startAnimationButton">Start Animation</button>
+    <div style="position: relative;">
+      <button id="speedButton">Speed</button>
+      <ul id="speedOptions">
+        <li class="speedOption">Slow</li>
+        <li class="speedOption">Medium</li>
+        <li class="speedOption">Fast</li>
+      </ul>
+    </div>
+  </div>
+  <svg id="svg-AdvancedKelpContainer" width="1000" height="900"></svg>
+
+  <!-- Include all your JavaScript files -->
+
+  <!-- Data first, then color converstion afterwards -->
+  <script src="SVGdrawings/Modules/DataGroupToColor.js"></script>
+  <script src="SVGdrawings/Modules/DataAccumulator.js"></script>
+  <script src="Data/data.js"></script>
+  <script src="Data/data2.js"></script>
+  <script src="Data/newData.js"></script>
+  <script src="Data/countryRegionData.js"></script>
+
+
+  
+  <script src="Data/dataListingHardCoded.js"></script>
+  <script src="SVGdrawings/Modules/XYPlot.js"></script>
+  <script src="SVGdrawings/Modules/CircleLabel.js"></script>
+  <script src="EventListeners/ButtonListChoice/SpeedButton.js"></script>
+  <script src="Tools/svgDrawTools.js"></script>
+  
+  
+  <script src="SVGdrawings/KelpChoices/KelpAdvancedChoice.js"></script>
+  <script src="SVGdrawings/KelpChoices/KelpAdvancedAnimationChoice.js"></script>
+  <script src="EventListeners/KelpSliders/KelpBaseInterface.js"></script>
+  <script src="EventListeners/KelpSliders/KelpAdvancedInterface.js"></script>
+  <script src="EventListeners/KelpSliders/kelpAdvancedAnimationInterface.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

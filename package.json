@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@canvasjs/charts": "^3.8.2",
+    "@turf/turf": "^6.5.0",
+    "bubblesets": "^1.0.2",
+    "bubblesets-js": "^2.3.2",
+    "cytoscape": "^3.29.2",
+    "cytoscape-bubblesets": "^3.2.1",
+    "cytoscape-layers": "^2.4.4",
+    "d3": "^7.9.0",
+    "express": "^4.19.2"
+  }
+}

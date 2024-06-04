@@ -1,0 +1,48 @@
+// Code 
+
+- We need to finsih splitting up the parts of the alorithm 
+
+- Make final ajustments to the code
+
+- Refactor / finishing touches 
+
+
+// Project report 
+
+- We would like to start writing soon the project 
+
+- Also we need to rename the project to more exquisit name 
+
+-/ Structure:
+
+- Abstract
+
+- introduction 
+
+- Static Data Visualisation
+-- Alorithms used // Math behind them
+
+- Gooey Visualisation
+
+- Animations / Make it alive 
+
+- Comparison to other work and ideas for future work
+
+- Conclusion
+
+- Acknowledgements 
+
+- References 
+
+- Appendix with programming code, tables, full proofs, etc.
+
+
+
+
+
+//TODO:
+
+- We need to fix the convex hull path path elimination, given that there
+is a collision (fixed)
+
+- 
