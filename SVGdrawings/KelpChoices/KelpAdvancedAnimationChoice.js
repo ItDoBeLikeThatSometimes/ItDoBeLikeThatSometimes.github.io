@@ -36,7 +36,7 @@ class KelpAdvancedAnimationChoice {
             .text(this.years[this.currentYearIndex]); // Set initial year
 
 
-        this.xyPlot.addLabels("Life Expectency", "GDP per Capita")
+        this.xyPlot.addLabels("Life Expectency - Ajusted by 20 for more visual appeal", "GDP per Capita")
         this.animationSpeed = 1000; // Default speed (1 second)
 
         
