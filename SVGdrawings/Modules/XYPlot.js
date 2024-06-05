@@ -63,6 +63,24 @@ class XYPlot {
                 .tickFormat(""));
     }
 
+    addLabels(xLabel, yLabel){
+        this.svg.append("text")
+            .attr("class", "x label")
+            .attr("text-anchor", "end")
+            .attr("x", this.margin.left + this.width)
+            .attr("y", this.margin.top + this.height + this.margin.bottom - 10)
+            .text(xLabel);
+
+
+        this.svg.append("text")
+            .attr("class", "y label")
+            .attr("text-anchor", "end")
+            .attr("y", this.margin.top - 40)
+            .attr("x", -this.margin.top)
+            .attr("dy", ".75em")
+            .attr("transform", "rotate(-90)")
+            .text(yLabel);
+    }
 
 }
 
